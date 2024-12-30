@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Signup Form</h1>
+        <form id="signupForm" action="#" method="POST" novalidate>
+            <label for="regNo">Registration Number *</label>
+            <input type="text" id="regNo" name="regNo" placeholder="Ex: 25BCE0001" required>
+            <span class="error" id="regNoError"></span>
+
+            <label for="username">Username *</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <span class="error" id="usernameError"></span>
+
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <span class="error" id="passwordError"></span>
+
+            <label for="mobile">Mobile Number *</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+            <span class="error" id="mobileError"></span>
+
+            <label for="dob">Date of Birth *</label>
+            <input type="text" id="dob" name="dob" placeholder="DDMMYYYY" required>
+            <span class="error" id="dobError"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
